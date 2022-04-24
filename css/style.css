@@ -274,6 +274,9 @@
     color: white;
     background: #FF6433;
 }
+.repair-flex .selected-item p {
+    color: white;
+}
 
 #repair-section .container a {
     text-decoration: none;
