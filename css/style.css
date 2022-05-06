@@ -70,7 +70,7 @@
 
 .text-hero .vehicle {
     font-size: 64px;
-    width: 624px;
+    
     
 }
 
@@ -119,7 +119,7 @@
 .left-quote-section h2 {
     font-size: 50px;
     margin-bottom: 30px;
-    width: 583px;
+    /* width: 583px; */
     font-weight: 800;
     line-height: 76px;
 }
@@ -163,7 +163,7 @@
 #quote-section .right-quote-section input[type="text"] {
     width: 100%;
     height: 50px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 2px;
     border: none;
 }
@@ -182,14 +182,19 @@
 }
 #process-section .left-process-section h2 {
     font-size: 58px;
-    width: 524px;
+    /* width: 524px; */
     margin-bottom: 16px;
 }
 #process-section .left-process-section p {
     font-size: 16px;
-    width: 437px;
+    /* width: 437px; */
     margin-bottom: 32px;
 }
+
+#disappear {
+    display: none;
+}
+
 .one {
     align-items: center;
 }
@@ -274,6 +279,7 @@
     color: white;
     background: #FF6433;
 }
+
 .repair-flex .selected-item p {
     color: white;
 }
@@ -351,18 +357,189 @@
 
 .brands-flex {
     display: flex;
-    flex-basis: 1%;
     flex-flow: row wrap;
     justify-content:space-evenly;
     align-items: center;
 }
 .brands-items {
-    flex-basis: 15%;
+    flex-basis: 18%;
     justify-content: center;
     align-items: center;
-    width: 18%;
 }
 #brands-section h3 {
     text-align: center;
+}
+
+
+/* mobile view */
+
+@media (max-width: 426px) {
+    .main-header {
+       flex-direction: column;
+       align-items: flex-start; 
+    }
+
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .right-section .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-section .navigation {
+        border: none;
+        width: 100%;
+    }
+
+    .right-section .navigation ul li {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .right-section ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .road-assistance {
+        padding: 10px 0;
+    }
+    .right-section {
+        display: none;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .flex-sm-column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    /* hero section */
+    
+    #hero-section .text-hero, #hero-section .img-hero {
+        width: 100%;
+        
+    }
+
+    #hero-section .text-hero p {
+        font-size: 35px;
+    }
+    #hero-section .text-hero .time-text p {
+        font-size: 18px;
+    }
+
+    /* quote section */
+
+    #quote-section .left-quote-section, 
+    #quote-section .right-quote-section {
+        width: 100%;
+    }
+
+    .left-quote-section h2 {
+        line-height: 50px;
+        font-size: 35px;
+        /* text-align: center; */
+    }
+
+    #quote-section .left-quote-section .image-icon {
+        width: 8%;
+    }
+
+    .left-quote-section .text-side p {
+        width: 100%;
+    }
+
+    #quote-section .left-quote-section .text-side {
+        width: 80%;
+    }
+
+    /* process section */
+    #appear {
+        display: none;
+    }
+    #disappear {
+        display: block;
+    }
+    #getquotefirst {
+        margin-bottom: 30px;
+    }
+
+    #process-section .left-process-section, #process-section .right-process-section {
+        width: 100% ;
+    }
+    #process-section .right-process-section {
+        padding: 0;
+    }
+    #process-section .left-process-section {
+        padding-top: 0;
+    }
+    #process-section .left-process-section h2 {
+        font-size: 40px;
+    }
+    
+    .one-right .getsmall {
+        width: 100%;
+    }
+
+    .one-right .getquote {
+        font-size: 26px;
+        margin-bottom: 33px;
+    }
+    .one-right .getsmall {
+        font-size: 17px;
+    }
+    #process-section .left-process-section p {
+        margin-bottom: 50px;
+    }
+
+    /* Repair section */
+    #repair-section .container p {
+        font-size: 20px;
+    }
+
+    #repair-section .container h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .repair-items {
+        flex-basis: 48%;
+    }
+    #repair-section .container .learn {
+        margin-top: 20px;
+    }
+
+    /* query section */
+
+    .car, .battery {
+        display: none;
+    }
+    .inside-query {
+        position: static;
+        width: 100%;
+    }
+    .inside-query h3 {
+        margin-top: 0px;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .black-btn {
+        margin-top: 10px;
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    /* brand section */
+
+    .brands-items {
+        flex-basis: 50%;
+    }
+
 }
 
