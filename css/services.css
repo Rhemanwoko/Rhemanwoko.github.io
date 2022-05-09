@@ -1,0 +1,155 @@
+#service-section .service-div {
+    position: relative;
+    
+}
+#service-section .service-div .service-img {
+    width: 70%;
+}
+
+#service-section .service-div .service-text {
+    position: absolute;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1E1B1B;
+    height: 100%;
+    width: 60%;
+    color: white;
+    padding: 90px;
+}
+#service-section .service-div .service-text h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+#service-section .service-div .service-text p {
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+
+#diag-section {
+    background-color: #F5F5F5;
+}
+
+#diag-section .left-diag, #diag-section .right-diag {
+    flex-basis: 47%;
+}
+.diag-flex{
+    justify-content: space-between;
+}
+
+#diag-section .left-diag img {
+    width: 100%;
+}
+
+#diag-section .left-diag{
+    padding: 48px;
+    background-color: white;
+}
+
+#diag-section .left-diag h3 {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.diag-block {
+    display: inline-block;
+    margin-right: 16px;
+}
+.diag-p {
+    margin-bottom: 32px;
+}
+
+.diag-flex-two {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.diag-flex-two a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-diag-items {
+    flex-basis: 48%;
+    height: 180px;
+    background-color: white;
+    color: black;
+    margin-bottom: 32px;
+
+}
+.diag-flex-two .selected-item-diag {
+    background-color: #FF6433;
+    color: white;
+}
+.inside-items-diag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.inside-items-diag p {
+    margin-top: 12px;
+}
+.special-diag {
+    margin-bottom: 0;
+}
+
+
+
+.up-follow {
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.up-follow-text, .up-follow-img {
+    flex-basis: 46%;
+}
+.up-follow-text h3 {
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.up-follow-text .sub-follow {
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.up-follow-text .up-follow-svg {
+    width: 5%;
+    margin-right: 30px;
+}
+.up-follow-text .up-follow-p {
+    width: 90%;
+    font-size: 24px;
+}
+
+.up-follow-text .zero-follow {
+    margin-bottom: 4px;
+}
+
+.up-follow-img {
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.up-follow-img img {
+    width: 49%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.down-follow .up-follow-text p {
+    font-size: 18px;
+}
+
+.down-follow .up-follow-text h3 {
+    margin-bottom: 30px;
+}
+.down-follow .up-follow-img {
+    padding-left: 0;
+    padding-right: 20px;
+}
